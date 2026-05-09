@@ -1,0 +1,88 @@
+{
+  "greetings": [
+    "hello",
+    "hi",
+    "hey",
+    "good morning",
+    "good evening"
+  ],
+  "answers": [
+    {
+      "keywords": ["login", "sign in", "password", "account"],
+      "answer": "Use the login page with your username and password. If you do not have an account, open the register page and create one first."
+    },
+    {
+      "keywords": ["register", "signup", "sign up", "create account"],
+      "answer": "Open the register page, enter username, password, and confirm password, then submit the form to create your OTT account."
+    },
+    {
+      "keywords": ["subscription", "plan", "premium", "basic", "standard"],
+      "answer": "The platform supports Basic, Standard, and Premium plans. You can open the Subscription Module from the dashboard to record a subscription."
+    },
+    {
+      "keywords": ["payment", "pay", "paid", "amount", "billing"],
+      "answer": "Use the Payment button on the dashboard. It opens the mock payment page where you enter name, email, plan, and amount. Successful submissions are stored in the payment database."
+    },
+    {
+      "keywords": ["content", "movie", "series", "add content", "manage content"],
+      "answer": "Open Content Management from the dashboard to add titles, type, genre, description, and poster URL."
+    },
+    {
+      "keywords": ["cookies", "visit", "visits"],
+      "answer": "The Cookies Demo tracks your last visit and total number of visits using browser cookies."
+    },
+    {
+      "keywords": ["session", "time", "date", "duration"],
+      "answer": "Session Tracking shows current date and time along with the current session duration. A live session summary also appears on the dashboard."
+    },
+    {
+      "keywords": ["database", "mysql", "xampp", "phpmyadmin"],
+      "answer": "Start Apache and MySQL in XAMPP, import the SQL file into the ott_platform database, and update db.php with the correct database credentials if required."
+    },
+    {
+      "keywords": ["offline", "internet", "network"],
+      "answer": "This chatbot works without internet because it reads answers from a local FAQ JSON file inside your OTT project."
+    },
+    {
+      "keywords": ["contact", "helpline", "support", "help"],
+      "answer": "This helpline bot can answer basic platform questions. If you need code changes or server fixes, check Tomcat logs and project files from the dashboard modules."
+    },
+    {
+      "keywords": ["admin", "admin login", "admin access", "admin module"],
+      "answer": "Only the admin user can access Content Management, Cookies Demo, and Session Tracking. Normal users can use the dashboard, chatbot, subscription, and payment modules."
+    },
+    {
+      "keywords": ["chatbot", "bot", "faq", "questions"],
+      "answer": "The chatbot uses a local JSON knowledge file and matches your question with keywords. It is designed for offline support and basic platform guidance."
+    },
+    {
+      "keywords": ["tomcat", "start tomcat", "run tomcat", "server start"],
+      "answer": "To run the JSP application, start Tomcat from the bin folder using startup.bat, then open the project URL on localhost:8080."
+    },
+    {
+      "keywords": ["stop tomcat", "shutdown tomcat", "close server"],
+      "answer": "If shutdown.bat is disabled or the shutdown port is off, stop Tomcat with catalina.bat stop, by closing the terminal, or by stopping the Java process using the port."
+    },
+    {
+      "keywords": ["movie details", "movie description", "click movie", "poster click"],
+      "answer": "On the dashboard, click a movie card to open the details view. It shows the poster, title, type, genre, and description in a focused modal."
+    },
+    {
+      "keywords": ["payment methods", "upi", "card", "net banking"],
+      "answer": "The payment page supports UPI, Card, and Net Banking interfaces. Each method shows its own form section, but the backend still stores the transaction in the same payments table."
+    },
+    {
+      "keywords": ["qr", "upi qr", "scan", "scan and pay"],
+      "answer": "The UPI section includes a QR code image below the UPI ID field. It is part of the payment page layout and works as a visual scan-and-pay interface."
+    },
+    {
+      "keywords": ["build", "compile", "servlet build", "build script"],
+      "answer": "Use build-servlets.ps1 from the project root to compile Java servlet source files into WEB-INF/classes. Run it before testing servlet-based modules after source changes."
+    },
+    {
+      "keywords": ["where is database", "payments table", "payment db", "ott_platform"],
+      "answer": "The payment module stores records in the MySQL database ott_platform, inside the payments table. You can inspect it through phpMyAdmin or with SQL queries."
+    }
+  ],
+  "fallback": "I can answer basic OTT platform questions about login, registration, subscription, payment, content management, cookies, session tracking, and XAMPP setup."
+}
